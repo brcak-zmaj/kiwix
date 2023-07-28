@@ -1,0 +1,13 @@
+version: "3"
+services:
+  kiwix:
+    image: kiwix/kiwix-serve:latest
+    entrypoint: "/usr/local/bin/kiwix-serve --port 9494 --verbose --library /data/library.xml"
+    ports:
+      - 9494:9494
+    volumes:
+      - /mnt/archives/zim:/data:ro
+    restart: on-failure
+
+
+
