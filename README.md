@@ -13,7 +13,7 @@ Step-by-step Guide
 
 First, clone this repository to your server
 
-2. Generate the library.xml file
+2. Generate the library.xml file (make sure you've downloaded the files first)
 
 Run the provided script zim_library_gen.sh
 
