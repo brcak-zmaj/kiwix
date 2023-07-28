@@ -1,6 +1,7 @@
 version: "3"
 services:
   kiwix:
+    container_name: kiwix-full
     image: kiwix/kiwix-serve:latest
     entrypoint: "/usr/local/bin/kiwix-serve --port 9494 --verbose --library /data/library.xml"
     ports:
@@ -8,6 +9,3 @@ services:
     volumes:
       - /mnt/archives/zim:/data:ro
     restart: on-failure
-
-
-
