@@ -1,3 +1,5 @@
+# Make sure you install aria2 package as it's much faster to download these files
+# Feel free to remove or add zim files as needed 
 # Script to download
 # aria2c -x 16 -s 16 -i  zim_files.txt
 
